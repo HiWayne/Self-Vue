@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hello world</title>
+    <meta charset="utf-8">
+    <script src="self-vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1 style="margin-top:100px;text-align:center;color:rgb(0, 204, 255);font-size:50px;">{{title}}</h1>
+        <div style="margin:0 auto;width:300px;text-align:center;">
+            <input v-model="message">{{message}}
+        </div>
+    </div>
+
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data: {
+                message: "Hello World",
+                title: "This is Self-Vue"
+            }
+        })
+    </script>
+</body>
+
+</html>
